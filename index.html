@@ -4,112 +4,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Pagina personale</title>
 </head>
 <body>
-    <header>
-        <h1>Dave web</h1>
-        <a href="./index.html">HOME</a>
-        <a href="./gallery.html">GALLERY</a>
-        <a href="./viaggi.html">I MIEI VIAGGI</a>
-        <a href="./contatti.html">CONTATTI</a>
+    <header class="header">
+        <a href="./index.html" class="logo">Dave web</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn">
+        <label class="menu-icon" for="menu-btn">
+            <span class="nav-icon"></span>
+        </label>
+        <ul class="menu">
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./esperienze.html">ESPERIENZE</a></li>
+            <li><a href="./gallery.html">GALLERY</a></li>
+            <li><a href="./viaggi.html">VIAGGI</a></li>
+            <li><a href="./contatti.html">CONTATTI</a></li>
+        </ul>
     </header>
-    <main>
-        <div>
-            <h2>Chi sono</h2>
-            <p>
-                Ciao e benvenuto sul mio sito personale di prova ! Mi chiamo <b>Davide Consigliere</b>, ho <b>33</b> anni e ho deciso di intraprendere la carriera lavorativa da programmatore. 
-                Ho provato a creare questa pagina personale come esercizio e compito a scuola. 
-                Nel seguente blog descriverò un po' chi sono, le mie esperienze di formazione (scolastiche e lavorative), i miei viaggi e una breve gallery di bei momenti che ho vissuto.
-                Grazie per essere qui! 
-            </p>
+    <div class="box-container">
+        <div class="box">
+            <main>
+                <div class="Profilo">
+                    <h1>DAVIDE CONSIGLIERE</h1>
+                    <h2>Chi sono</h2>
+                    <img class="img-profilo" width="200px" src="./assets/me_stesso.jpg" alt="Foto Profilo" title="Davide Consigliere">
+                    <p>
+                        Ciao e benvenuto sul mio sito personale di prova ! Mi chiamo <b>Davide Consigliere</b>, ho <b>33</b> anni e ho deciso di intraprendere la carriera lavorativa da programmatore.<br>
+                        Ho provato a creare questa pagina personale come esercizio e compito a scuola.<br>
+                        Nel seguente blog descriverò un po' chi sono, le mie esperienze di formazione (scolastiche e lavorative), i miei viaggi e una breve gallery di bei momenti che ho vissuto.<br>
+                        Grazie per essere qui! 
+                    </p>
+                </div>
+                <section>
+                    <h2>Esperienza scolastica</h2>
+                    <p>
+                        Mi sono iscritto nella scuola <b>ITIS Primo Levi</b> nell'anno scolastico <b>2003/2004</b>, affrontando così un percorso di studio indirizzato all'elettronica e alle telecomunicazioni.<br>
+                        Non avevo ben chiaro cosa avrei voluto fare da grande, ma sapevo che era un percorso formativo che mi avrebbe aperto a molteplici possibilità, sia lavorative che di eventuali specializzazioni.<br>
+                        Nell'anno 2009 ho così ottenuto il diploma di <b>"Perito Industriale Capo Tecnico ad indirizzo Elettronica e Telecomunicazioni"</b>, con un punteggio di <b>78/100.</b><br>
+                        Appena ho ottenuto questo importante obbiettivo ho voluto lanciarmi subito nel mondo del lavoro, desiderando di avere un'indipendenza economica...e così è stato.
+                    </p>
+                </section>
+                <section>
+                    <h2>Formazione lavorativa</h2>
+                    <p>
+                        Come spiegato precedentemente ho intrapreso un percorso lavorativo molto presto, volendo assolutamente un'indipendenza economica.
+                        Ho quindi iniziato a lavorare tramite cooperativa in una ditta, la <b>Januaplast s.r.l.</b>, come addetto al facchinaggio nel settore della gomma/plastica.
+                        Il mio obbiettivo era quello di cercarmi un lavoro migliore di questo, ma ottenendo nel frattempo uno stipendio che mi potesse permettere di "togliermi delle soddisfazioni" e iniziare a maturare come persona.
+                        Dopo breve tempo, però, il datore di lavoro della suddetta ditta ha voluto assumermi come operatore di soffiaggio PET, avendo notato la mia determinazione e dedizione.
+                        Infatti in quel periodo era stata comprata una grande macchina nuova per il soffiaggio di flaconi in PET, decidendo così di assumermi nel ruolo dandomi la possibilità di imparare un mestiere e di crescere lavorativamente.
+                        Negli anni successivi la Januaplast s.r.l. venne poi acquisita da un'importantissima azienda multinazionale nel settore, con la quale ho avuto maggiore possibilità di fare carriera ottenendo il ruolo di <b>Capo Turno</b>.
+                        Grazie a questo ruolo ho avuto la possibilità di crescere ulteriormente, imparando anche a gestire il personale e i reparti.
+                        Nell'anno <b>2022</b>, però, la multinazionale ha deciso di chiudere lo stabilimento, costringendomi così a trovare un nuovo lavoro nonostante la carriera intrapresa.
+                        Ho quindi trovato un impiego come <b>attrezzista stampi</b> nella azienda <b>Georg Fisher TPA s.r.l.</b>, con un contratto di sei mesi.
+                        Durante i miei ultimi 2 mesi di lavoro all'interno di questa azienda eravamo in cassa integrazione, costringendo quest'ultima a non rinnovarmi il contratto, nonostante il disappunto dei miei collegi e del mio capo reparto.
+                        A questo punto della mia vita ho voluto dare una svolta importante, dandomi l'obbiettivo di non fare mai più l'operaio e di intraprendere una carriera che mi potesse realizzare maggiormente come persona e farmi sentire più orgoglioso.
+                        Ho così scoperto il mondo della programmazione, iniziando a studiare da autodidatta e poi iscrivendomi in una scuola di formazione passando le selezioni.
+                        Vedremo cosa mi aspetterà in futuro!...
+                    </p>
+                </section>   
+                <section>
+                    <h2>Capacità e competenze generali</h2>
+                    <p>
+                        Ho acquisito un'ottima capacità relazionale, anche con colleghi di nazionalità estera. Ho imparato grazie alla mia esperienza da capo turno a saper come gestire le persone in base al loro carattere e alla loro personalità, in modo da renderle sempre il più collaborative possibili.
+                        Ho esperienza nel gestire il turno selezionando i ruoli e i cambi per le pause, anche nell'organizzazione dei reparti mantenendoli sempre in ordine e tenendoli sempre ben forniti di tutto il necessario per le varie produzioni.
+                        Sono molto pignolo con l'ordine e la pulizia, se vedo che nel luogo di lavoro queste ultime vengono a mancare mi metto subito all'opera per porvi rimedio.
+                        Ho un'ottima manualità a livello meccanico acquisita durante le mie esperienze lavorative, come il montaggio e lo smontaggio dei macchinari e degli stampi.
+                        Ho anche esperienza nell'utilizzo del carroponte per lo spostamento di stampi con pesi di tonnellate, quindi con particolare attenzione alla sicurezza, alla gestione dei baricentri e dei punti di presa.
+                        Ho anche una discreta manualità di utilizzo del computer, e sono portato ad imparare l'utilizzo di vari programmi.
+                        Ho anche esperienza nel settore del magazzino, utilizzando il muletto per lo scarico e il carico dei camion.
+                        Sono una persona volenterosa e con tanta voglia di imparare, fare esperienze nuove e se possibile fare carriera.
+                        Mi piacerebbe anche, se ce ne fosse la possibilità, di viaggiare per lavoro.
+                    </p>
+                </section>
+            </main>
         </div>
-        <section>
-            <h3>Esperienza scolastica</h3>
-            <p>
-                Mi sono iscritto nella scuola <b>ITIS Primo Levi</b> nell'anno scolastico <b>2003/2004</b>, affrontando così un percorso di studio indirizzato all'elettronica e alle telecomunicazioni.<br>
-                Non avevo ben chiaro cosa avrei voluto fare da grande, ma sapevo che era un percorso formativo che mi avrebbe aperto a molteplici possibilità, sia lavorative che di eventuali specializzazioni.<br>
-                Nell'anno 2009 ho così ottenuto il diploma di <b>"Perito Industriale Capo Tecnico ad indirizzo Elettronica e Telecomunicazioni"</b>, con un punteggio di <b>78/100.</b><br>
-                Appena ho ottenuto questo importante obbiettivo ho voluto lanciarmi subito nel mondo del lavoro, desiderando di avere un'indipendenza economica...e così è stato.
-            </p>
-            <h3>Istruzione e Formazione:</h3>
-            <ul>
-                <li><b>Date (da-a):</b> Da Settembre 2003 ad Agosto 2009</li>
-                <li><b>Nome e tipo di istituto:</b> ITIS Primo Levi</li>
-                <li><b>Principali materie oggetto dello studio:</b> Elettronica, TDP, Sistemi e Telecomunicazioni</li>
-                <li><b>Qualifica conseguita:</b> Perito Industriale Capo Tecnico ad Indirizzo Elettronica e Telecomunicazioni</li>
-                <li><b>Livello nella classificazione nazionale:</b> 78/100</li>
-            </ul>
-        </section>
-        <section>
-            <h3>Formazione lavorativa</h3>
-            <p>
-                Come spiegato precedentemente ho intrapreso un percorso lavorativo molto presto, volendo assolutamente un'indipendenza economica.
-                Ho quindi iniziato a lavorare tramite cooperativa in una ditta, la <b>Januaplast s.r.l.</b>, come addetto al facchinaggio nel settore della gomma/plastica.
-                Il mio obbiettivo era quello di cercarmi un lavoro migliore di questo, ma ottenendo nel frattempo uno stipendio che mi potesse permettere di "togliermi delle soddisfazioni" e iniziare a maturare come persona.
-                Dopo breve tempo, però, il datore di lavoro della suddetta ditta ha voluto assumermi come operatore di soffiaggio PET, avendo notato la mia determinazione e dedizione.
-                Infatti in quel periodo era stata comprata una grande macchina nuova per il soffiaggio di flaconi in PET, decidendo così di assumermi nel ruolo dandomi la possibilità di imparare un mestiere e di crescere lavorativamente.
-                Negli anni successivi la Januaplast s.r.l. venne poi acquisita da un'importantissima azienda multinazionale nel settore, con la quale ho avuto maggiore possibilità di fare carriera ottenendo il ruolo di <b>Capo Turno</b>.
-                Grazie a questo ruolo ho avuto la possibilità di crescere ulteriormente, imparando anche a gestire il personale e i reparti.
-                Nell'anno <b>2022</b>, però, la multinazionale ha deciso di chiudere lo stabilimento, costringendomi così a trovare un nuovo lavoro nonostante la carriera intrapresa.
-                Ho quindi trovato un impiego come <b>attrezzista stampi</b> nella azienda <b>Georg Fisher TPA s.r.l.</b>, con un contratto di sei mesi.
-                Durante i miei ultimi 2 mesi di lavoro all'interno di questa azienda eravamo in cassa integrazione, costringendo quest'ultima a non rinnovarmi il contratto, nonostante il disappunto dei miei collegi e del mio capo reparto.
-                A questo punto della mia vita ho voluto dare una svolta importante, dandomi l'obbiettivo di non fare mai più l'operaio e di intraprendere una carriera che mi potesse realizzare maggiormente come persona e farmi sentire più orgoglioso.
-                Ho così scoperto il mondo della programmazione, iniziando a studiare da autodidatta e poi iscrivendomi in una scuola di formazione passando le selezioni.
-                Vedremo cosa mi aspetterà in futuro!...
-            </p>
-            <h3>Esperienze lavorative:</h3>
-            <ul>
-                <li><b>Date (da-a):</b> Da Luglio 2009 a Ottobre 2011</li>
-                <li><b>Nome e indirizzo del datore di lavoro:</b> Aux Società Cooperativa, Via Bolzaneto 33/6, 16162 Genova</li>
-                <li><b>Tipo di azienda o settore:</b> Facchinaggio</li>
-                <li><b>Tipo di impiego:</b> Operaio</li>
-                <li><b>Principali mansioni e responsabilità:</b> Imballaggio di flaconi di plastica</li>
-            </ul>
-            <ul>
-                <li><b>Date (da-a):</b> Da Novembre 2011 a Dicembre 2019</li>
-                <li><b>Nome e indirizzo del datore di lavoro:</b> Januaplast s.r.l., Via Fontanelle 18, 16012 Busalla (GE)</li>
-                <li><b>Tipo di azienda o settore:</b> Gomma Plastica</li>
-                <li><b>Tipo di impiego:</b> Operaio addetto al soffiaggio PET</li>
-                <li><b>Principali mansioni e responsabilità:</b> Addetto al montaggio e smontaggio di macchinario SIAPI per il soffiaggio di flaconi PET, e alla produzione</li>
-            </ul>
-            <ul>
-                <li><b>Date (da-a):</b> Da Gennaio 2020 a Luglio 2022</li>
-                <li><b>Nome e indirizzo del datore di lavoro:</b> Januaplast s.r.l., Via Fontanelle 18, 16012 Busalla (GE)</li>
-                <li><b>Tipo di azienda o settore:</b> Gomma Plastica</li>
-                <li><b>Tipo di impiego:</b> Capo Turno</li>
-                <li><b>Principali mansioni e responsabilità:</b> Addetto al montaggio e smontaggio di macchinari per soffiaggio PE/PP/PET, alla produzione, alla gestione del personale del turno e alla organizzazione dei reparti</li>
-            </ul>
-            <ul>
-                <li><b>Date (da-a):</b> Da Agosto 2022 a Dicembre 2022</li>
-                <li><b>Nome e indirizzo del datore di lavoro:</b> Georg Fisher TPA s.r.l., Via Seminella 50/m, 16012 Busalla (GE)</li>
-                <li><b>Tipo di azienda o settore:</b> Industria Meccanica</li>
-                <li><b>Tipo di impiego:</b> Attrezzista stampi</li>
-                <li><b>Principali mansioni e responsabilità:</b> Addetto al cambio formato di stampi per il soffiaggio di materiale plastico e utilizzo del carroponte</li>
-            </ul>
-        </section>   
-        <section>
-            <h3>Capacità e competenze generali</h3>
-            <p>
-                Ho acquisito un'ottima capacità relazionale, anche con colleghi di nazionalità estera. Ho imparato grazie alla mia esperienza da capo turno a saper come gestire le persone in base al loro carattere e alla loro personalità, in modo da renderle sempre il più collaborative possibili.
-                Ho esperienza nel gestire il turno selezionando i ruoli e i cambi per le pause, anche nell'organizzazione dei reparti mantenendoli sempre in ordine e tenendoli sempre ben forniti di tutto il necessario per le varie produzioni.
-                Sono molto pignolo con l'ordine e la pulizia, se vedo che nel luogo di lavoro queste ultime vengono a mancare mi metto subito all'opera per porvi rimedio.
-                Ho un'ottima manualità a livello meccanico acquisita durante le mie esperienze lavorative, come il montaggio e lo smontaggio dei macchinari e degli stampi.
-                Ho anche esperienza nell'utilizzo del carroponte per lo spostamento di stampi con pesi di tonnellate, quindi con particolare attenzione alla sicurezza, alla gestione dei baricentri e dei punti di presa.
-                Ho anche una discreta manualità di utilizzo del computer, e sono portato ad imparare l'utilizzo di vari programmi.
-                Ho anche esperienza nel settore del magazzino, utilizzando il muletto per lo scarico e il carico dei camion.
-                Sono una persona volenterosa e con tanta voglia di imparare, fare esperienze nuove e se possibile fare carriera.
-                Mi piacerebbe anche, se ce ne fosse la possibilità, di viaggiare per lavoro.
-            </p>
-        </section>
-    </main>
-    <hr>
-    <footer>
-        <address>
-            Davide Consigliere, Via xxx Casella (GE),
-            <a href="mailto:mailfinta@gmail.com">mailfinta@gmail.com</a>
-            <a href="tel:+39 340 4444888">340/4444888</a>
-        </address>
-    </footer>
+        <footer>
+            <address>
+                Davide Consigliere, Via xxx Casella (GE)<br>
+                <div class="box-footer">
+                    E-Mail:<a href="mailto:mailfinta@gmail.com"> mailfinta@gmail.com</a><br>
+                    Tel:<a href="tel:+39 340 4444888"> 340/4444888</a>
+                </div>
+            </address>
+        </footer>   
+    </div>  
 </body>
 </html>
