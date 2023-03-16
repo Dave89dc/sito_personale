@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&family=Righteous&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: Mukta, sans-serif;
+    color: #252535;
     width: 100%;
     background-image: url(https://images.unsplash.com/photo-1656476227579-1e6911bb9925?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
     background-size: cover;
@@ -13,8 +18,7 @@ body {
 }
 
 .header {
-    /*margin-top: 0;*/
-    background-color: #353535;
+    background-color: #252535;
     width: 100%;
     position: fixed;
 }
@@ -132,14 +136,13 @@ h1 {
 
 h1, h2 {
     font-family: Righteous, sans-serif;
-    color: #353535;
     clear: both;
     margin-top: 50px;
 }
 
 hr {
     height: 2px;
-    background-color: #353535;
+    background-color: #252535;
 }
 
 .img-profilo {
@@ -147,17 +150,27 @@ hr {
     margin-left: 30px;
     width: 250px;
     margin-bottom: 50px;
+    box-shadow: 0 0 2px 2px black;
 }
 
-img {
+.img-profilo:hover {
+    box-shadow: none;
+}
+
+.foto {
     width: 40%;
     margin: 5px;
     justify-content: space-evenly;
+    box-shadow: 0 0 2px 2px black;
+}
+
+.foto:hover {
+    box-shadow: none;
 }
 
 main a {
     text-decoration: none;
-    color: #353535;
+    color: #252535;
 }
 
 main a:hover {
@@ -176,7 +189,8 @@ button {
     width: 80px;
     height: 30px;
     margin-top: 30px;
-    background-color: #D9D9D9;
+    color: #FFFFFF;
+    background-color: #252535;
     border-radius: 10px;
     box-shadow: 0 0 2px 0 black;
     font-weight: bold;
@@ -188,13 +202,13 @@ button:active {
 }
 
 footer {
-    background-color: #353535;
+    background-color: #252535;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 80px;
     margin-bottom: 30px;
     padding: 20px 0;
     text-align: center;
-    border-radius: 20px;
+    border-radius: 0 0 20px 20px;
     color: #FFFFFF;
 }
 
@@ -206,6 +220,49 @@ footer a {
 footer a:hover {
     text-decoration: underline;
     color: #FFFFFF;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.indirizzo {
+    margin: 10px;
+}
+
+.info {
+    margin: 10px;
+    margin-right: 18px;
+}
+
+.torna-su {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.torna-su a {
+    text-decoration: none;
+}
+
+.torna-su a:hover {
+    text-decoration: underline;
+}
+
+.span-torna-su {
+    font-family: Righteous, sans-serif;
+    color: #252535;
+    font-size: 25px;
+}
+
+label:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 /* Adattamenti per schermi: */
